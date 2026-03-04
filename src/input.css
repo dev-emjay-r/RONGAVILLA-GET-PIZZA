@@ -234,7 +234,7 @@ tertiary - #223c5f */
 
     button {
         @apply absolute right-2 bg-secondary text-black px-6 py-3 rounded-xl 
-               font-medium text-sm transition-colors hover:bg-orange-400 uppercase;
+               font-medium text-sm transition-colors hover:bg-orange-400 uppercase cursor-pointer;
     }
   }
   /* Footer */
