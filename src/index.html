@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Pizza</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="../favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="pt-6">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <img src="../IMG/LOGO.png" alt="get pizza logo" class="h-16 w-36" />
+          <nav class="headerNav">
+            <ul>
+              <li><a href="./">home</a></li>
+              <li><a href="./about.html">about</a></li>
+              <li><a href="./menu.html">menu</a></li>
+              <li><a href="./contacts.html">contacts</a></li>
+            </ul>
+          </nav>
+          <!-- Toggle Menu -->
+
+          <!-- Toggle Menu here -->
+
+          <div class="toggleMenu"><span></span><span></span><span></span></div>
+        </div>
+        <!-- Information Text -->
+         <div class="flex justify-center items-center text-primary gap-3 mt-4 pb-1 text-center">
+            
+            <p class="font-medium text-center"><i class="fa-solid fa-bullhorn"></i>  This website provides information about our store. Online transactions are coming soon</p>
+         </div>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="py-6 md:py-0 bg-secondary/25">
+      <div class="container">
+        <!-- Wrapper -->
+        <div class="flex flex-col md:flex-row-reverse">
+          <img
+            src="../IMG/banner-home.png"
+            alt="guy holding a pizza"
+            class="md:size-1/2 md:object-cover"
+          />
+          <div class="bannerTitle">
+            <h2>
+              <span class="font-black">Hungry?</span> You're in the right place
+            </h2>
+            <a href="#" class="btn btn--primary">View our menu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Welcome -->
+    <section class="py-12">
+      <div class="container">
+        <!-- wrapper -->
+        <div id="welcome-wrapper" class="grid grid-cols-1 md:grid-cols-2">
+          <!-- grid -->
+          <div class="hero-image-stack">
+            <img src="../IMG//3chefs.png" alt="" id="hero-img-1" />
+            <img src="../IMG/food.png" alt="" id="hero-img-2" />
+          </div>
+          <!-- Content -->
+          <div class="welcome-content">
+            <h3>welcome to get pizza</h3>
+            <!-- Emphasis -->
+            <p class="emphasis">
+              OUR CHEFS ARE WORKING 24/7 AND ARE READY TO ACCEPT VISITORS AND AT
+              ANY TIME OF THE DAY AND NIGHT
+            </p>
+            <p>
+              We would like to take this opportunity to welcome you at our Pizza
+              House. We are offering a warm, friendly atmosphere to share a meal
+              with family and friends at any time of the day or evening.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- home menu -->
+    <section class="bg-tertiary py-8" id="home-menu">
+      <div class="container">
+        <h2 class="text-center uppercase mb-4">
+          We offer people best way to eat best food
+        </h2>
+        <!-- Tab Icons -->
+        <div class="tabIcons">
+          <ul>
+            <li class="active" id="tabs-1">
+              <button><i class="fa-solid fa-pizza-slice"></i></button>
+            </li>
+            <li id="tabs-2">
+              <button><i class="fa-solid fa-burger"></i></button>
+            </li>
+            <li id="tabs-3">
+              <button><i class="fa-solid fa-drumstick-bite"></i></button>
+            </li>
+            <li id="tabs-4">
+              <button><i class="fa-solid fa-glass-water"></i></button>
+            </li>
+            <li id="tabs-5">
+              <button><i class="fa-solid fa-cake-candles"></i></button>
+            </li>
+          </ul>
+        </div>
+        <!-- Content -->
+        <div class="tabCards">
+          <!-- item 1 - Pizza-->
+          <div class="tabItem active" id="tabs-1-card">
+            <div class="tabItemWrap">
+              <div class="tabCard">
+                <!-- Food Image -->
+                <img src="../IMG/prosciutto.png" alt="" />
+                <!-- Food Name -->
+                <h4>PROSCIUTTO PIZZA</h4>
+                <!-- price -->
+                <p>$25.00</p>
+                <!-- Ratings -->
+                <ul class="foodRating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+
+                </ul>
+                <a href="#" class="btn btn--tertiary">Read More</a>
+              </div>
+              <div class="tabCard">
+                <!-- Food Image -->
+                <img src="../IMG/bbq pizza.png" alt="" />
+                <!-- Food Name -->
+                <h4>BARBECUE PIZZA</h4>
+                <!-- price -->
+                <p>$25.00</p>
+                <!-- Ratings -->
+                <ul class="foodRating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="#" class="btn btn--tertiary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- item 2 - Burger-->
+          <div class="tabItem" id="tabs-2-card">
+            <div class="tabItemWrap">
+              <!-- 1 -->
+              <div class="tabCard">
+                <!-- Food Image -->
+                <img src="../IMG/CHEESE BURGER.png" alt="cheese burger" />
+                <!-- Food Name -->
+                <h4>CHEESE BURGER</h4>
+                <!-- price -->
+                <p>$15.00</p>
+                <!-- Ratings -->
+                <ul class="foodRating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="#" class="btn btn--tertiary">Read More</a>
+              </div>
+              <!-- 2 -->
+              <div class="tabCard">
+                <!-- Food Image -->
+                <img src="../IMG/CHEESE BURGER.png" alt="cheese burger" />
+                <!-- Food Name -->
+                <h4>CHEESE BURGER</h4>
+                <!-- price -->
+                <p>$18.00</p>
+                <!-- Ratings -->
+                <ul class="foodRating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="#" class="btn btn--tertiary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- item 3 - Chicken-->
+          <div class="tabItem" id="tabs-3-card">
+            <div class="tabItemWrap">
+              <!-- 1 -->
+              <div class="tabCard">
+                <!-- Food Image -->
+                <img src="../IMG/CHICKEN WITH BREAD.png" alt="" />
+                <!-- Food Name -->
+                <h4>FILLET WITH BREAD</h4>
+                <!-- price -->
+                <p>$45.00</p>
+                <!-- Ratings -->
+                <ul class="foodRating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="#" class="btn btn--tertiary">Read More</a>
+              </div>
+              <!-- 2 -->
+              <div class="tabCard">
+                <!-- Food Image -->
+                <img src="../IMG/CHICKEN WITH BREAD.png" alt="" />
+                <!-- Food Name -->
+                <h4>FILLET WITH BREAD</h4>
+                <!-- price -->
+                <p>$58.00</p>
+                <!-- Ratings -->
+                <ul class="foodRating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="#" class="btn btn--tertiary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- item 4 - Drinks-->
+          <div class="tabItem" id="tabs-4-card">
+            <div class="tabItemWrap">
+              <!-- 1 -->
+              <div class="tabCard">
+                <!-- Food Image -->
+                <img src="../IMG/ORANGE DRINK.png" alt="orange drink" />
+                <!-- Food Name -->
+                <h4>ORANGE DRINK</h4>
+                <!-- price -->
+                <p>$10.00</p>
+                <!-- Ratings -->
+                <ul class="foodRating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="#" class="btn btn--tertiary">Read More</a>
+              </div>
+              <!-- 2 -->
+              <div class="tabCard">
+                <!-- Food Image -->
+                <img src="../IMG/ORANGE DRINK.png" alt="orange drink" />
+                <!-- Food Name -->
+                <h4>ORANGE DRINK</h4>
+                <!-- price -->
+                <p>$12.00</p>
+                <!-- Ratings -->
+                <ul class="foodRating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="#" class="btn btn--tertiary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- item 5 - Cakes-->
+          <div class="tabItem" id="tabs-5-card">
+            <div class="tabItemWrap">
+                <!-- 1 -->
+              <div class="tabCard">
+                <!-- Food Image -->
+                <img src="../IMG/MUFFIN-CAKE.png" alt="" />
+                <!-- Food Name -->
+                <h4>MUFFIN CAKE</h4>
+                <!-- price -->
+                <p>$23.00</p>
+                <!-- Ratings -->
+                <ul class="foodRating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="#" class="btn btn--tertiary">Read More</a>
+              </div>
+                <!-- 2 -->
+              <div class="tabCard">
+                <!-- Food Image -->
+                <img src="../IMG/MUFFIN-CAKE.png" alt="" />
+                <!-- Food Name -->
+                <h4>MUFFIN CAKE</h4>
+                <!-- price -->
+                <p>$20.00</p>
+                <!-- Ratings -->
+                <ul class="foodRating">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="#" class="btn btn--tertiary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA -->
+    <section class="bg-primary pt-4 pb-8 md:pb-0" id="cta">
+      <div class="container">
+        <!-- wrapper -->
+        <div
+          class="grid grid-cols-1 md:flex md:flex-row text-white justify-center items-center"
+        >
+          <img src="../IMG/chef.png" alt="" class="hidden md:block " />
+          <div class="cta-content">
+            <h4 class="text-center text-3xl mt-6  uppercase">
+              Let's Connect
+            </h4>
+            <p class="text-center font-medium">
+              and get a 10% off bill offers and invites
+            </p>
+            <div class="email-subscription">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="YOUR EMAIL ADDRESS"
+              /><button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-white py-6">
+      <div class="container">
+        <div class="grid grid-cols-1 items-center justify-center text-center">
+          <!-- Logo -->
+            <img src="../img/LOGO.png" alt="" class="mx-auto"/>
+          
+          <!-- Business Info -->
+          <div class="footerInfo">
+            <!-- address -->
+            <ul>
+              <li><h5>address</h5></li>
+              <li>
+                <p>570 8th Ave, New York, NY</p>
+                <p>10018 United States</p>
+              </li>
+            </ul>
+            <!-- Book a table -->
+            <ul>
+              <li><h5>book a table</h5></li>
+              <li>
+                <p>Dogfood Och Sliders Foodtruck.</p>
+                <p>Under Om Oss Kan Ni Lasa</p>
+              </li>
+            </ul>
+            <!-- Schedule -->
+            <ul>
+              <li><h5>opening hours</h5></li>
+              <li>
+                <p>Monday - Friday</p>
+                <p>10.00 AM - 11.00 PM</p>
+              </li>
+            </ul>
+          </div>
+          <!-- Contact Number -->
+          <small class="text-primary">0123456987</small>
+        </div>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script src="../js/index.js" type="module"></script>
+  </body>
+</html>

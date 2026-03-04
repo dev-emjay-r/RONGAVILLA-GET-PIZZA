@@ -1,0 +1,241 @@
+@import "tailwindcss";
+/* 
+primary - #B23920
+secondary - #F7B754
+tertiary - #223c5f */
+
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-SemiBold.woff2) format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@theme {
+  --font-poppins: "Poppins", san-serif;
+  --color-primary: #b23920;
+  --color-secondary: #f7b754;
+  --color-tertiary: #223c5f;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth scroll-p-16;
+  }
+  body {
+    @apply overflow-x-hidden font-poppins text-black/80 text-base bg-white;
+  }
+  .container {
+    @apply max-w-7xl w-full mx-auto px-4;
+  }
+  h1 {
+    @apply text-[clamp(2rem,6vw,3rem)] font-bold;
+  }
+  h2 {
+    @apply text-[clamp(1.5rem,5vw,2.5rem)] font-bold;
+  }
+  h3 {
+    @apply text-[clamp(1.25rem,4vw,2rem)] font-bold;
+  }
+  h4 {
+    @apply text-[clamp(1rem,3vw,1.75rem)] font-bold;
+  }
+  h5 {
+    @apply text-xl font-semibold;
+  }
+  h6 {
+    @apply text-lg font-semibold;
+  }
+}
+
+@layer components {
+    /* Header */
+  .headerNav ul {
+    @apply flex flex-col  gap-4 fixed w-full top-26 text-left items-center overflow-hidden right-0 opacity-0 h-0
+        /* Desktop */
+        md:opacity-100 md:flex-row md:items-center md:top-auto md:h-auto md:static;
+        /* Open */
+        &.open {
+             @apply h-fit opacity-100 bg-white shadow-md w-full top-22 px-4 pb-3 duration-300 
+        /* Desktop */
+        md:shadow-none md:px-0 md:pb-0;
+        }
+  }
+  
+  .headerNav ul li a {
+    @apply font-medium uppercase;
+  }
+  .toggleMenu {
+    @apply flex flex-col gap-1 md:hidden;
+    
+  }
+
+  .toggleMenu span:first-child {
+    @apply w-10;
+  }
+  .toggleMenu span:nth-child(2) {
+    @apply w-7;
+  }
+  .toggleMenu span:last-child {
+    @apply w-0;
+  }
+  .toggleMenu span {
+    @apply inline-block h-1 rounded-xl bg-primary  duration-300
+    md:hidden
+    ;
+  }
+  .toggleMenu.open {
+        span {
+            @apply w-10 duration-300;
+        }
+    }
+  
+
+  .bannerTitle {
+    @apply uppercase mt-6 flex flex-col gap-6 flex flex-col justify-center;
+    h2 {
+      @apply text-5xl font-semibold;
+    }
+    a {
+      @apply w-1/3;
+    }
+  }
+  /* Buttons */
+  .btn {
+    @apply inline-block px-6 py-3 rounded-lg font-medium w-full text-center duration-300;
+  }
+  .btn--primary {
+    @apply bg-primary text-white hover:bg-tertiary;
+  }
+  .btn--secondary {
+    @apply bg-secondary text-white hover:bg-tertiary;
+  }
+  .btn--tertiary {
+    @apply bg-tertiary text-white hover:bg-secondary/40 border border-primary
+    
+    ;
+  }
+  /* Home Hero */
+  .hero-image-stack {
+    @apply flex flex-col items-center p-6;
+    #hero-img-2 {
+      @apply translate-x-12 -translate-y-12;
+    }
+    img {
+      @apply border-9 border-black rounded-3xl w-9/12;
+    }
+  }
+  .welcome-content {
+    h3 {
+      @apply mb-6 uppercase text-3xl text-left;
+    }
+    .emphasis {
+      @apply text-primary uppercase font-semibold mb-4;
+    }
+
+    @apply justify-center flex flex-col p-4;
+  }
+  #home-menu {
+    @apply text-white;
+  }
+
+  /* Menu */
+  .tabIcons {
+    ul {
+      @apply flex gap-6 justify-center;
+      li {
+        @apply text-2xl
+            text-tertiary
+            border-0 border-secondary rounded-full;
+        &.active {
+          @apply border-2 border-secondary;
+        }
+        button {
+          @apply m-1
+            bg-white
+            rounded-full
+            p-4
+            hover:bg-white/50
+            cursor-pointer;
+        }
+      }
+    }
+  }
+  /* Menu Cards */
+  .tabItemWrap {
+    @apply flex gap-4 justify-center mt-12
+    ;
+  }
+  .tabItem{
+    @apply hidden;
+    &.active {
+        @apply block;
+    }
+  }
+  .tabCard {
+    @apply border-2 border-white rounded-md p-6 flex flex-col gap-2 justify-center items-center h-auto w-1/2
+    
+    /* desktop */
+    md:w-2/3
+    lg:w-1/3
+    ;
+    img {
+        @apply size-36 mb-6;
+    }
+  }
+  .foodRating {
+    @apply text-secondary flex gap-0.5;
+  }
+
+  /* CTA */
+  .cta-content {
+    @apply grid grid-cols-1 justify-center items-center md:flex md:flex-col h-auto;
+  }
+  .email-subscription {
+
+    @apply relative flex items-center w-full max-w-md mx-auto mt-4 bg-white p-2;
+
+    input {
+
+        @apply w-full py-3 pl-4 pr-32 outline-none text-gray-500 placeholder:text-gray-400;
+    }
+
+    button {
+        @apply absolute right-2 bg-secondary text-black px-6 py-3 rounded-xl 
+               font-medium text-sm transition-colors hover:bg-orange-400 uppercase;
+    }
+  }
+  /* Footer */
+  .footerInfo {
+    @apply mt-8
+    flex flex-col md:flex-row
+    gap-8 justify-center items-center
+    ;
+    ul {
+        @apply flex flex-col mb-4;
+        h5 {
+            @apply uppercase text-black;
+        }
+        
+    }
+    
+  }
+}
