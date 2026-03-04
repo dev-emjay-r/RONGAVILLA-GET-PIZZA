@@ -68,6 +68,9 @@ tertiary - #223c5f */
 
 @layer components {
     /* Header */
+    header {
+      @apply bg-white w-full   z-50 fixed;
+    }
   .headerNav ul {
     @apply flex flex-col  gap-4 fixed w-full top-26 text-left items-center overflow-hidden right-0 opacity-0 h-0
         /* Desktop */
@@ -75,7 +78,7 @@ tertiary - #223c5f */
         /* Open */
         &.open {
              @apply h-fit opacity-100 bg-white shadow-md w-full top-22 px-4 pb-3 duration-300 
-        /* Desktop */
+        /* Desktop */ 
         md:shadow-none md:px-0 md:pb-0;
         }
   }
