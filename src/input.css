@@ -185,13 +185,18 @@ tertiary - #223c5f */
     ;
   }
   .tabItem{
-    @apply hidden;
+    @apply hidden
+     transition-all duration-300 ease-in-out
+     opacity-0
+    ;
     &.active {
-        @apply block;
+        @apply block 
+        opacity-100
+        ;
     }
   }
   .tabCard {
-    @apply border-2 border-white rounded-md p-6 flex flex-col gap-2 justify-center items-center h-auto w-1/2
+    @apply border-2 border-white rounded-md p-6 flex flex-col gap-2 justify-center items-center h-auto w-1/2 
     
     /* desktop */
     md:w-2/3
