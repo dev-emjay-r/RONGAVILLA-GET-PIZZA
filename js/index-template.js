@@ -20,3 +20,5 @@ async function loadTemplate(url, elementId) {
 }
 loadTemplate("./partials/_header.html", "header-placeholder");
 loadTemplate("./partials/_footer.html", "footer-placeholder");
+loadTemplate("./partials/_cta.html", "cta-placeholder");
+loadTemplate("./partials/_menu.html", "menu-placeholder");

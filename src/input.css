@@ -237,6 +237,29 @@ tertiary - #223c5f */
                font-medium text-sm transition-colors hover:bg-orange-400 uppercase cursor-pointer;
     }
   }
+
+  /* about.html */
+  /* accordion our story */
+  .accordionWrapper{
+    @apply grid grid-cols-1 gap-5 md:p-16;
+  }
+  .accordionYear {
+    @apply bg-primary text-white flex justify-between py-3 pl-3 pr-6 items-center duration-500;
+    i {
+      @apply duration-500;
+    }
+    &.active {
+      i {
+        @apply rotate-180;
+      }
+    }
+  }
+  .accordionContent {
+    @apply overflow-hidden h-0 mt-4 opacity-0 duration-300 ease-in transition-all;
+    &.active {
+      @apply h-fit opacity-100;
+    }
+  }
   /* Footer */
   .footerInfo {
     @apply mt-8
