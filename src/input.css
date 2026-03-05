@@ -252,11 +252,71 @@ tertiary - #223c5f */
       @apply h-fit opacity-100;
     }
   }
+
+  /* Clients Feedback */
   .clientsFeedback {
     @apply flex flex-col items-center justify-center gap-6;
   }
   .clientSlider {
     @apply flex justify-center items-center;
+  }
+
+  /* menu.html */
+  .menuBanner {
+    @apply bg-[url(../IMG/menubanner.jpg)] bg-cover bg-left bg-no-repeat h-screen  
+    w-full pt-36
+    relative
+    ;
+  }
+  .menuBanner::after {
+    @apply content-[''] absolute top-0 left-0 w-full h-full bg-black/80;
+  }
+  .menuBanner__content {
+    @apply text-white absolute 
+    z-10 flex flex-col gap-6 justify-center items-center
+    uppercase
+    bottom-80
+    max-w-1/2 text-left
+    right-30
+    md:left-120
+    md:top-30
+    md:bottom-0
+    md:text-center
+    ;
+  }
+  .tabs-menu {
+   @apply flex items-center justify-center mt-4 mb-6;
+    ul {
+      @apply flex gap-4 justify-center items-center bg-secondary py-4 text-tertiary font-bold uppercase 
+      rounded-2xl w-fit px-2 text-center
+      ;
+      li {
+        @apply border-r border-white px-2 cursor-pointer
+        lg:px-12 md:py-1
+        ;
+        &.active {
+            @apply text-primary;
+          }
+      }
+      li:last-child {
+        @apply border-r-0;
+      }
+    }
+  }
+  .tabCardItemWrap {
+    @apply grid grid-cols-3 gap-3 md:px-36;
+  }
+  
+  .tabCardMenu {
+    @apply border-0 md:border-2 border-white rounded-md p-6 grid grid-cols-1 gap-2 justify-center items-center h-full w-full 
+    text-white text-center;
+    img {
+      @apply size-24 md:size-36 mb-6 mx-auto 
+      ;
+    }
+    ul {
+      @apply mx-auto
+    }
   }
   /* Footer */
   .footerInfo {
