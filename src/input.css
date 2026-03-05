@@ -316,6 +316,23 @@ tertiary - #223c5f */
       @apply mx-auto
     }
   }
+  /* Contact.html */
+
+  .contact-input {
+    @apply flex md:flex-row gap-4 mb-4;
+    input {
+      @apply w-full py-3 px-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white;
+    }
+    textarea {
+      @apply w-full py-3 px-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white;
+    }
+  }
+  .info {
+    @apply flex-col;
+  }
+  .name{
+    @apply flex flex-row md:flex-row gap-4 justify-center items-center pt-2 my-auto;
+  }
   /* Footer */
   .footerInfo {
     @apply mt-8
