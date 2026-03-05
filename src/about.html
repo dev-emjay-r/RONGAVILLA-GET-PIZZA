@@ -17,6 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
     <script src="../js/index-template.js" type="module" defer></script>
   </head>
   <body>
@@ -29,7 +33,7 @@
         <div class="container">
           <!-- Wrapper -->
           <div
-            class="grid gap-6 grid-cols-1 items-center justify-center md:grid-cols-2"
+            class="grid gap-6 grid-cols-1 items-center justify-center md:grid-cols-2 md:mb-6"
           >
             <iframe
               class="w-full aspect-video px-2"
@@ -54,7 +58,7 @@
                 serving get <br class="md:hidden" />pizzas<br class="" />
                 by the since 1985
               </h1>
-              <p>
+              <p class="pr-12">
                 We would like to take this opportunity to welcome you at our
                 Pizza House. We are offering a warm, friendly atmosphere to
                 share a meal with family and friends at any time of the day or
@@ -67,7 +71,9 @@
       <!-- Our story accordion -->
       <section class="bg-white py-6">
         <div class="container">
-          <h3 class="uppercase text-black text-center mb-6">our story</h3>
+          <h3 class="uppercase text-black text-center mb-6 md:mb-1">
+            our story
+          </h3>
           <!-- wrapper -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 items-center">
             <!-- accordion -->
@@ -164,19 +170,95 @@
       <section class="bg-white py-6">
         <div class="container">
           <!-- wrapper -->
-          <div class="flex flex-col items-center justify-center gap-6">
-            <h3 class="uppercase text-black font-bold text-center">clients review</h3>
-            <img src="../IMG/feedback5.png" alt="" 
-            class="size-24 rounded-full"
-            />
-            <p class="text-center text-black max-w-1/2 leading-5">
-              "Etiam sapien sem at sagittis congue augue massa varius sodales
-              sapien undo tempus dolor egestas magna suscipit magna tempus
-              aliquet porta sodales augue suscipit luctus neque"
-            </p>
+        <div class="flex flex-col gap-3 justify-center items-center">
+           <h3 class="uppercase text-black font-bold text-center">clients review</h3>
+          <div class="clientSlider">
+            <!-- 1 -->
+            <div>
+              <div class="clientsFeedback">
+                <img
+                src="../IMG/feedback.png"
+                alt=""
+                class="size-24 rounded-full"
+              />
+              <p class="text-center text-black max-w-1/2 leading-5">
+                "Etiam sapien sem at sagittis congue augue massa varius sodales
+                sapien undo tempus dolor egestas magna suscipit magna tempus
+                aliquet porta sodales augue suscipit luctus neque"
+              </p>
 
-            <p>Patrick Greenish</p>
+              <p>Patrick Greenish</p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div><div class="clientsFeedback">
+              <img
+                src="../IMG/feedback2.png"
+                alt=""
+                class="size-24 rounded-full"
+              />
+              <p class="text-center text-black max-w-1/2 leading-5">
+                "Etiam sapien sem at sagittis congue augue massa varius sodales
+                sapien undo tempus dolor egestas magna suscipit magna tempus
+                aliquet porta sodales augue suscipit luctus neque"
+              </p>
+
+              <p>Patrick Greenish</p>
+            </div></div>
+            <!-- 3 -->
+            <div>
+              <div class="clientsFeedback">
+  
+              <img
+                src="../IMG/feedback3.png"
+                alt=""
+                class="size-24 rounded-full"
+              />
+              <p class="text-center text-black max-w-1/2 leading-5">
+                "Etiam sapien sem at sagittis congue augue massa varius sodales
+                sapien undo tempus dolor egestas magna suscipit magna tempus
+                aliquet porta sodales augue suscipit luctus neque"
+              </p>
+
+              <p>Patrick Greenish</p>
+            </div>
+            </div>
+            <!-- 4 -->
+            <div>
+              <div class="clientsFeedback">
+              <img
+                src="../IMG/feedback4.png"
+                alt=""
+                class="size-24 rounded-full"
+              />
+              <p class="text-center text-black max-w-1/2 leading-5">
+                "Etiam sapien sem at sagittis congue augue massa varius sodales
+                sapien undo tempus dolor egestas magna suscipit magna tempus
+                aliquet porta sodales augue suscipit luctus neque"
+              </p>
+
+              <p>Patrick Greenish</p>
+            </div>
+            </div>
+            <!-- 5 -->
+            <div>
+              <div class="clientsFeedback">
+              <img
+                src="../IMG/feedback5.png"
+                alt=""
+                class="size-24 rounded-full"
+              />
+              <p class="text-center text-black max-w-1/2 leading-5">
+                "Etiam sapien sem at sagittis congue augue massa varius sodales
+                sapien undo tempus dolor egestas magna suscipit magna tempus
+                aliquet porta sodales augue suscipit luctus neque"
+              </p>
+
+              <p>Patrick Greenish</p>
+            </div>
+            </div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -186,6 +268,7 @@
     <!-- Main Content -->
     <div id="footer-placeholder"></div>
     <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="../js/index.js" type="module"></script>
   </body>
 </html>
